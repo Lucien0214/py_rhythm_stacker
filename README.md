@@ -31,7 +31,7 @@
 
 #### 1. 克隆或下载项目
 ```bash
-git clone https://github.com/your-username/rhythm-stacker.git
+git clone https://github.com/Lucien0214/rhythm-stacker.git
 cd rhythm-stacker
 ```
 
@@ -146,7 +146,7 @@ Inspired by the mini‑game from *Rhythm Doctor*, this project extends the conce
 
 #### 1. Clone or download the project
 ```bash
-git clone https://github.com/your-username/rhythm-stacker.git
+git clone https://github.com/Lucien0214/rhythm-stacker.git
 cd rhythm-stacker
 ```
 
