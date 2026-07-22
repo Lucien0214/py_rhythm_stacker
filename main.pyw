@@ -131,7 +131,7 @@ COLOR_STAR        = (245, 240, 230)    # 星星粒子
 COLOR_BLUE        = (0, 150, 255)      # forgiveness 状态（极少触发）
 
 VERSION="2.0.0"
-HMAC_KEY=b"YOUR_HMAC_KEY_HERE"         # 这个不能给看.呃,你要是硬要逆向我也没办法就是了(
+HMAC_KEY=b""
 
 MODE_NONE=-1
 MODE_PLAYING=0
@@ -499,6 +499,7 @@ class StatusBar:
         return self.surface
 
 class Score:
+    lang=Language()
     def from_data(self,score,maxcombo,health_left,lack_forgiveness,offsets,extra_hits):
         self.lang = Language()
         self.player = NAME
@@ -1386,6 +1387,8 @@ class RhythmStacker:
             self.state.get_mode_data().last_offset=offset
             mistake=not abs(offset)<JUDGE_WINDOW
             self.state.get_mode_data().mistake=mistake
+            if not mistake:
+                self.state.get_mode_data().last_hit_pos=now_pos
             #卡顿伤害减免
             self.state.get_mode_data().forgiveness=False
             if lack:
