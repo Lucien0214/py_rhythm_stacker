@@ -104,6 +104,12 @@ rhythm-stacker/
 
 ---
 
+## ❓你知道吗
+
+- 本项目作者的最高分达到`400`, 并且后期电脑帧率只有不到`15FPS`，详见`Lucien.stack`，不服来战(
+
+---
+
 **祝你堆叠愉快！🎵**
 
 ---
@@ -216,6 +222,12 @@ rhythm-stacker/
 ## 📄 License
 
 This project is licensed under the **MIT License** – you are free to use, modify, and distribute it, as long as the original copyright notice is retained.
+
+---
+
+## ❓ Do you know that?
+
+- The author's highest score in this project reached `400`, and the frame rate dropped to under `15FPS` in the later stages. See `Lucien.stack` for details — come and beat it if you can!
 
 ---
 
