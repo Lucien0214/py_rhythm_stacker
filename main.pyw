@@ -131,7 +131,7 @@ COLOR_STAR        = (245, 240, 230)    # 星星粒子
 COLOR_BLUE        = (0, 150, 255)      # forgiveness 状态（极少触发）
 
 VERSION="2.0.0"
-HMAC_KEY=b"ZoHS8cvp3EbWPhvZm5C49XjkHnWehT1rW3bpuqvRBHY"             #对是的你没看错,用来签名成绩文件的密钥我就摆在这.但是正人君子一点好吧(
+HMAC_KEY=b"YOUR_HMAC_KEY_HERE"         # 这个不能给看.呃,你要是硬要逆向我也没办法就是了(
 
 MODE_NONE=-1
 MODE_PLAYING=0
