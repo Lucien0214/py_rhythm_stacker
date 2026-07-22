@@ -86,7 +86,7 @@ rhythm-stacker/
 ├── stacker.cfg                # 游戏配置文件（首次运行自动生成）
 ├── resources/                 # 资源目录（需用户自行放置）
 │   ├── ...ttf                 # 字体文件（Minecraft AE.ttf, emj.ttf）
-│   ├── ...ogg/wav             # 音效文件
+│   ├── ...ogg or wav          # 音效文件
 │   └── sndRhythmStacker.wav   # 默认背景音乐
 ├── requirements.txt           # 依赖列表
 ├── README.md                  # 本文件
@@ -201,7 +201,7 @@ rhythm-stacker/
 ├── stacker.cfg                # Game configuration (auto‑generated on first run)
 ├── resources/                 # Resource directory (user‑provided)
 │   ├── ...ttf                 # Font files (Minecraft AE.ttf, emj.ttf)
-│   ├── ...ogg/wav             # Sound effect files
+│   ├── ...ogg or wav          # Sound effect files
 │   └── sndRhythmStacker.wav   # Default background music
 ├── requirements.txt           # Dependencies
 ├── README.md                  # This file
