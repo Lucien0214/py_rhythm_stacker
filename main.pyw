@@ -153,170 +153,221 @@ FLAG_TERMINATE_INPUT=8
 
 class Language:
     def __init__(self):
-        self.languages={
-            "chinese_simplified":0
+        self.languages = {
+            "chinese_simplified": 0,
+            "english": 1
         }
         self.texts = {
             1: [
-                "校准模式!"
+                "校准模式!",
+                "Calibration Mode!"
             ],
             2: [
-                "未选择文件!"
+                "未选择文件!",
+                "No file selected!"
             ],
             3: [
-                "卡顿宽恕开启!"
+                "卡顿宽恕开启!",
+                "Lag forgiveness enabled!"
             ],
             4: [
-                "按F2导入成绩,或者按任意键退出!"
+                "按F2导入成绩,或者按任意键退出!",
+                "Press F2 to import score, or press any key to exit!"
             ],
             5: [
-                "选择分数快照文件以读取!"
+                "选择分数快照文件以读取!",
+                "Select a score snapshot file to read!"
             ],
             6: [
-                "选择分数快照保存位置!"
+                "选择分数快照保存位置!",
+                "Choose where to save the score snapshot!"
             ],
             7: [
-                "用户未选择保存位置"
+                "用户未选择保存位置",
+                "User did not choose a save location"
             ],
             8: [
-                "无敌模式开启!"
+                "无敌模式开启!",
+                "Invincible mode enabled!"
             ],
             9: [
-                "ESC 结束游戏"
+                "ESC 结束游戏",
+                "ESC to end game"
             ],
             10: [
-                "获得{score}分以继续！"
+                "获得{score}分以继续！",
+                "Get {score} points to continue!"
             ],
             11: [
-                "参数数量必须为0或2"
+                "参数数量必须为0或2",
+                "Number of arguments must be 0 or 2"
             ],
             12: [
-                "禁止反序列化{module_name}.{global_name}:可能是恶意文件.尝试更新游戏."
+                "禁止反序列化{module_name}.{global_name}:可能是恶意文件.尝试更新游戏.",
+                "Deserialization of {module_name}.{global_name} is forbidden: possibly a malicious file. Try updating the game."
             ],
             13: [
-                "文件未找到:{e}"
+                "文件未找到:{e}",
+                "File not found: {e}"
             ],
             14: [
-                "无法打开文件:{e}"
+                "无法打开文件:{e}",
+                "Cannot open file: {e}"
             ],
             15: [
-                "解码失败:{e}"
+                "解码失败:{e}",
+                "Decoding failed: {e}"
             ],
             16: [
-                "存档格式不正确:{e}"
+                "存档格式不正确:{e}",
+                "Invalid save format: {e}"
             ],
             17: [
-                "未知错误:{e}"
+                "未知错误:{e}",
+                "Unknown error: {e}"
             ],
             18: [
-                "禁止节拍器参赛"
+                "禁止节拍器参赛",
+                "Metronome not allowed to compete"
             ],
             19: [
-                "生命值:{health}"
+                "生命值:{health}",
+                "Health: {health}"
             ],
             20: [
-                "再次按下F4清空进度并校准"
+                "再次按下F4清空进度并校准",
+                "Press F4 again to clear progress and calibrate"
             ],
             21: [
-                "Rhythm Stacker分数快照文件"
+                "Rhythm Stacker分数快照文件",
+                "Rhythm Stacker score snapshot file"
             ],
             22: [
-                "Rhythm Stacker分数快照文件(json格式)"
+                "Rhythm Stacker分数快照文件(json格式)",
+                "Rhythm Stacker score snapshot file (JSON format)"
             ],
             23: [
-                "把脚本关掉,现在!"
+                "把脚本关掉,现在!",
+                "Turn off the script, now!"
             ],
             24: [
-                "判定窗口:{window}"
+                "判定窗口:{window}",
+                "Judgment window: {window}"
             ],
             25: [
-                "剩余生命:{health}"
+                "剩余生命:{health}",
+                "Remaining health: {health}"
             ],
             26: [
-                "总生命:{total_health}"
+                "总生命:{total_health}",
+                "Total health: {total_health}"
             ],
             27: [
-                "标准差:{std}"
+                "标准差:{std}",
+                "Standard deviation: {std}"
             ],
             28: [
-                "评价:{rank}"
+                "评价:{rank}",
+                "Rank: {rank}"
             ],
             29: [
-                "[!] 无敌模式启用"
+                "[!] 无敌模式启用",
+                "[!] Invincible mode enabled"
             ],
             30: [
-                "[!] 卡顿宽恕减免生命扣除值:{forgiveness_total_health}"
+                "[!] 卡顿宽恕减免生命扣除值:{forgiveness_total_health}",
+                "[!] Lag forgiveness reduces health deduction by: {forgiveness_total_health}"
             ],
             31: [
-                "[!] 检测到{extra_hits}次双压行为,分数可能不反应真实水平."
+                "[!] 检测到{extra_hits}次双压行为,分数可能不反应真实水平.",
+                "[!] Detected {extra_hits} double-press actions, score may not reflect true skill."
             ],
             32: [
-                "成绩已校验"
+                "成绩已校验",
+                "Score verified"
             ],
             33: [
-                "HMAC签名不匹配,无法确认成绩真实性."
+                "HMAC签名不匹配,无法确认成绩真实性.",
+                "HMAC signature mismatch, cannot confirm score authenticity."
             ],
             34: [
-                "无法加载分数:{e}"
+                "无法加载分数:{e}",
+                "Unable to load score: {e}"
             ],
             35: [
-                "再次按下ESC退出"
+                "再次按下ESC退出",
+                "Press ESC again to exit"
             ],
             36: [
-                "节奏感评价:{rank}(按任意键保存)"
+                "节奏感评价:{rank}(按任意键保存)",
+                "Rhythm rank: {rank} (press any key to save)"
             ],
             37: [
-                "游戏结束 评价:{rank}"
+                "游戏结束 评价:{rank}",
+                "Game Over - Rank: {rank}"
             ],
             38: [
-                "[!] BPM{bpm}高于判定安全阈值,成绩仅供参考."
+                "[!] BPM{bpm}高于判定安全阈值,成绩仅供参考.",
+                "[!] BPM {bpm} exceeds judgment safety threshold, score is for reference only."
             ],
             39: [
-                "宽恕的生命:{forgiveness}"
+                "宽恕的生命:{forgiveness}",
+                "Forgiven health: {forgiveness}"
             ],
             40: [
-                "再次按下ESC放弃本次游玩"
+                "再次按下ESC放弃本次游玩",
+                "Press ESC again to abandon this session"
             ],
             41: [
-                "你是没睡醒吗"
+                "你是没睡醒吗",
+                "Are you awake?"
             ],
             42: [
-                "在保存成绩期间可能未响应,请耐心等待"
+                "在保存成绩期间可能未响应,请耐心等待",
+                "The program may become unresponsive while saving, please wait patiently"
             ],
             43: [
-                "在导入成绩期间可能未响应,请耐心等待"
+                "在导入成绩期间可能未响应,请耐心等待",
+                "The program may become unresponsive while importing, please wait patiently"
             ],
             44: [
-                "已验证!"
+                "已验证!",
+                "Verified!"
             ],
             45: [
-                "按任意键退出!"
+                "按任意键退出!",
+                "Press any key to exit!"
             ],
             46: [
-                "欢迎回来,{username}!"
+                "欢迎回来,{username}!",
+                "Welcome back, {username}!"
             ],
             47: [
-                "双击ESC来继续!"
+                "双击ESC来继续!",
+                "Double-click ESC to continue!"
             ],
             48: [
-                "再次按下F4清空校准进度并回到游戏"
+                "再次按下F4清空校准进度并回到游戏",
+                "Press F4 again to clear calibration progress and return to game"
             ],
             49: [
-                "距离目标:{left}"
+                "距离目标:{left}",
+                "Distance to target: {left}"
             ],
             50: [
+                "{left}",
                 "{left}"
             ],
             51: [
-                "跟着节拍按键!"
+                "跟着节拍按键!",
+                "Follow the beat and press!"
             ]
         }
     
-    def __call__(self,id,language=None,**kwargs):
-        language=LANGUAGE if language is None else language
-        language_id=self.languages[language]
+    def __call__(self, id, language=None, **kwargs):
+        language = LANGUAGE if language is None else language
+        language_id = self.languages[language]
         return self.texts[id][language_id].format(**kwargs)
-
 #------------------------------------LANGUAGE END------------------------------------------
 
 class RSUnpickler(pickle.Unpickler):
