@@ -1332,7 +1332,7 @@ class RhythmStacker:
             self.state.get_mode_data().rank=self.calibration_rank(std)
         
         #设置数据禁止标志
-        self.state.add_flag(Flag(FLAG_TERMINATE_INPUT,TerminateInputData(stop_time=get_pos()+FORCE_KEEP_TIME)))
+        self.state.add_flag(Flag(FLAG_TERMINATE_INPUT,TerminateInputData(stop_time=pg.time.get_ticks()+FORCE_KEEP_TIME)))
 
     def newgame(self):
         if not self.state==MODE_PLAYING:
@@ -1353,7 +1353,7 @@ class RhythmStacker:
     
     def check_input_terminate(self):
         if FLAG_TERMINATE_INPUT in self.state:
-            if self.state.get_flag_data(FLAG_TERMINATE_INPUT).stop_time<=get_pos():
+            if self.state.get_flag_data(FLAG_TERMINATE_INPUT).stop_time<=pg.time.get_ticks():
                 self.state.remove_flag(FLAG_TERMINATE_INPUT)
                 return False
             else:
