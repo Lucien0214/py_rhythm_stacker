@@ -1,4 +1,4 @@
-[EN](https://github.com/Lucien0214/py_rhythm_stacker/#-rhythm-stacker-1) Version of README
+*[EN](https://github.com/Lucien0214/py_rhythm_stacker/#-rhythm-stacker-1) Version of README*
 
 # 🎵 Rhythm Stacker
 
