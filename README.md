@@ -129,7 +129,7 @@ Inspired by the mini‑game from *Rhythm Doctor*, this project extends the conce
 
 ---
 > [!IMPORTANT]
-> The default language of the game is **`Simplified Chinese`**. If you wish to switch to English, modify the `LANGUAGE` value in the `stacker.cfg` file to **`English`**.
+> The default language of the game is **`chinese_simplified`**. If you wish to switch to English, modify the `LANGUAGE` value in the `stacker.cfg` file to **`english`**.
 ---
 
 ## ✨ Features
