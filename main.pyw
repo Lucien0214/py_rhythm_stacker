@@ -130,7 +130,7 @@ COLOR_GRAY        = (150, 150, 150)    # 次要信息、未校验
 COLOR_STAR        = (245, 240, 230)    # 星星粒子
 COLOR_BLUE        = (0, 150, 255)      # forgiveness 状态（极少触发）
 
-VERSION="2.0.0"
+VERSION="2.1.0"
 HMAC_KEY=b""
 
 MODE_NONE=-1
