@@ -1,3 +1,4 @@
+[EN](https://github.com/Lucien0214/py_rhythm_stacker/#-rhythm-stacker-1) Version of README
 
 # 🎵 Rhythm Stacker
 
@@ -126,6 +127,9 @@ A rhythm stacking game built with Pygame. Players stack "bricks" in time with th
 
 Inspired by the mini‑game from *Rhythm Doctor*, this project extends the concept with a scoring system, calibration tools, and tamper‑proof score snapshots.
 
+---
+> [!IMPORTANT]
+> The default language of the game is **`Simplified Chinese`**. If you wish to switch to English, modify the `LANGUAGE` value in the `stacker.cfg` file to **`English`**.
 ---
 
 ## ✨ Features
